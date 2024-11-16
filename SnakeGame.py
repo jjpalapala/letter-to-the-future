@@ -7,7 +7,7 @@ HEIGHT = 625
 WIDTH = 625
 GREEN = (0,255,0)
 RED = (255,0,0)
-DARK_GREEN = (43,51,24)
+
 
 screen = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("SuperSnake")
