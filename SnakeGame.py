@@ -29,18 +29,20 @@ while Running:
             Running = False
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                x -= speed_snake
-                x_change = 0
+                x_change = -speed_snake
+                y_change = 0
             elif event.key == pygame.K_RIGHT:
-                x += speed_snake
-                x_change = 0
+                x_change = speed_snake
+                y_change = 0
             elif event.key == pygame.K_UP:
-                y -= speed_snake
-                y_change = 0
+                y_change = -speed_snake
+                x_change = 0
             elif event.key == pygame.K_DOWN:
-                y += speed_snake
-                y_change = 0
-
-    pygame.draw.rect(screen, GREEN,[x,y,25,25])
+                y_change = speed_snake
+                x_change = 0
+    x += x_change
+    y += y_change
+    screen.fill(WHITE)
+    pygame.draw.rect(screen, GREEN, [x,y,25,25])
     pygame.display.update()
     clock.tick(FPS)
