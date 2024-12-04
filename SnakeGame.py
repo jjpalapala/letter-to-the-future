@@ -6,7 +6,7 @@ class SNAKE:
     def __init__(self):
         self.body = [Vector2(3,12),Vector2(4,12),Vector2(5,12)]
         self.direction = Vector2(1, 0)
-    
+
     def draw_snake(self):
         for block in self.body:
             x_position = int(block.x * CELL_SIZE)
@@ -33,8 +33,7 @@ class FRUIT:
     def draw_fruit(self):
         fruit_rect = pygame.Rect(int(self.position.x * CELL_SIZE),int(self.position.y* CELL_SIZE),CELL_SIZE,CELL_SIZE)
         pygame.draw.rect(screen,(0,255,255),fruit_rect)
-
-
+#2
 pygame.init()
 
 CELL_SIZE= 25
