@@ -36,7 +36,7 @@ class FRUIT:
 
 
 pygame.init()
-q
+
 CELL_SIZE= 25
 CELL_NUMBER = 25
 GREEN = (0,255,0)
