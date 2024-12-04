@@ -25,13 +25,18 @@ class FRUIT:
         self.y = random.randint(0,CELL_NUMBER - 1)
         self.position = Vector2(self.x,self.y)
 
+    def randomize(self):
+        self.x = random.randint(0, CELL_NUMBER - 1)
+        self.y = random.randint(0, CELL_NUMBER - 1)
+        self.position = Vector2(self.x, self.y)
+
     def draw_fruit(self):
         fruit_rect = pygame.Rect(int(self.position.x * CELL_SIZE),int(self.position.y* CELL_SIZE),CELL_SIZE,CELL_SIZE)
         pygame.draw.rect(screen,(0,255,255),fruit_rect)
 
 
 pygame.init()
-
+q
 CELL_SIZE= 25
 CELL_NUMBER = 25
 GREEN = (0,255,0)
