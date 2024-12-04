@@ -36,7 +36,6 @@ class FRUIT:
 
 
 pygame.init()
-q
 CELL_SIZE= 25
 CELL_NUMBER = 25
 GREEN = (0,255,0)
@@ -75,3 +74,5 @@ while Running:
     snake.draw_snake()
     pygame.display.update()
     clock.tick(60)
+
+gvfuibhigvufbhnjkhobigvufyugbhnjbgivfcdvgbh
