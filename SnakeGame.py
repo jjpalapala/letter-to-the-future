@@ -74,4 +74,3 @@ while Running:
     pygame.display.update()
     clock.tick(60)
 
-gvfuibhigvufbhnjkhobigvufyugbhnjbgivfcdvgbh
